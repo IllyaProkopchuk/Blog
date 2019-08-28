@@ -1,0 +1,109 @@
+.container {
+  width: 60%;
+  margin: 0 auto;
+  min-height: 600px;
+  padding: 20px;
+}
+
+.header {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 24px;
+  text-align: center;
+}
+
+.topicPart,
+.messagePart {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.inp {
+  height: 40px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+
+.mes {
+  height: 50px;
+}
+
+textarea {
+  border-radius: 6px;
+  line-height: 17px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.post {
+  width: 60%;
+  margin-left: 170px;
+  margin-top: 10px;
+  height: 45px;
+}
+
+.newsPart {
+  width: 100%;
+  min-height: 100px;
+  margin-top: 20px;
+}
+
+.box {
+  background: white;
+  border-radius: 6px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.boxTop {
+  padding: 10px;
+  width: 20%;
+  background-color: rgba(165, 165, 165, 0.486);
+}
+
+.myText {
+  width: 80%;
+  padding: 10px;
+}
+.btnPart{
+    display: flex;
+    flex-direction: row;
+}
+.buttonChangeRemove{
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    font-size: 10px;
+}
+.time{
+    height: 46px;
+    overflow: hidden;
+}
+.pp{
+    margin-bottom: -2px;
+}
+.modal-content{
+    padding: 10px;
+}
+.change{
+    margin-top: 5px;
+    margin-bottom: -3px;
+}
+.red{
+    border: 2px solid red;
+}
+
+.p1{
+    position: absolute;
+    top: 27px;
+    right: 328px;
+}
+.p2{
+    position: absolute;
+    top: 27px;
+    right: 428px;
+}
