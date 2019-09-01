@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { GuardsCheckStart } from '@angular/router';
+import * as $ from 'jquery';
+
 
 @Component({
   selector: 'app-root',
@@ -49,16 +51,18 @@ export class AppComponent {
       this.index = i;
       this.changeTopic = this.array[i].topic;
       this.changeText = this.array[i].textMessage;
-      $('#myModal').modal('toggle');
+      // $('#myModal').modal('toggle');
+      // document.getElementById('myModal').classList.add('show');
+      // document.getElementById('myModal').style.display = 'block';
     }
   }
   public changeIt(): void {
     this.array[this.index].topic = this.changeTopic;
     this.array[this.index].textMessage = this.changeText;
-    $('#myModal').modal('hide');
+    // $('#myModal').modal('hide');
   }
   public singInModal(): void {
-    $('#myNewModal').modal('toggle');
+    // $('#myNewModal').modal('toggle');
     this.check = false;
   }
   public signIn(): void {
@@ -68,7 +72,7 @@ export class AppComponent {
       this.loginization = true;
       this.login = '';
       this.pass = '';
-      $('#myNewModal').modal('hide');
+      // $('#myNewModal').modal('hide');
     }
     else {
       this.check = true;

@@ -22,7 +22,7 @@
         <p class="pp">Post by: {{arr.userName}}</p>
         <p class="time">{{arr.time}}</p>
         <div class="btnPart">
-          <button (click)="change(i)" class="btn btn-danger buttonChangeRemove"
+          <button (click)="change(i)" data-toggle="modal" data-target="#myModal" class="btn btn-danger buttonChangeRemove"
             style="margin-right: 5px">change</button>
           <button (click)="remove(i)" class="btn btn-primary buttonChangeRemove">remove</button>
         </div>
@@ -33,7 +33,7 @@
       </div>
     </div>
   </div>
-  <button *ngIf="!loginization" class="btn btn-outline-dark p1" (click)="singInModal()">Sign In</button>
+  <button *ngIf="!loginization" class="btn btn-outline-dark p1" data-toggle="modal" data-target="#myNewModal" (click)="singInModal()">Sign In</button>
   <button *ngIf="loginization" class="btn btn-dark p2" (click)="signOut()">Sign Out</button>
 
 </div>
@@ -45,7 +45,7 @@
         aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
       <p style="margin-bottom: 3px; font-weight: bold">Message: </p>
       <textarea [(ngModel)]="changeText" name="" id="" cols="75" rows="6" placeholder="type here..."></textarea>
-      <button class="btn btn-dark change" (click)="changeIt()">Change</button>
+      <button class="btn btn-dark change" data-dismiss="myModal" (click)="changeIt()">Change</button>
     </div>
   </div>
 </div>
@@ -60,7 +60,7 @@
       <input [(ngModel)]="pass" type="password" placeholder="type here..." class="form-control inp"
         aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
       <p *ngIf="check" style="color: red">Wrong login or password!</p>
-      <button class="btn btn-dark change" (click)="signIn()">Sign In</button>
+      <button class="btn btn-dark change" data-dismiss="modal"  (click)="signIn()">Sign In</button>
     </div>
   </div>
 </div>
